@@ -2,7 +2,8 @@
   "name": "open-spec-js",
   "displayName": "Open Spec JS",
   "description": "",
-  "version": "0.0.1",
+  "publisher": "DRAFT",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.78.0"
   },
@@ -14,8 +15,15 @@
   "contributes": {
     "commands": [
       {
-        "command": "open-spec-js.helloWorld",
+        "command": "open-spec-js.toggle",
         "title": "OpenSpecJS: Toggle"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "open-spec-js.toggle",
+        "key": "shift+alt+s",
+        "mac": "ctrl+shift+s"
       }
     ]
   },
